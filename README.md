@@ -41,7 +41,7 @@ networkx26/
 │   ├── index.css
 │   └── main.jsx
 ├── index.html
-├── package.json
+├── package.json      
 ├── vite.config.js
 └── README.md
 ```
@@ -49,6 +49,8 @@ networkx26/
 ## Getting Started
 
 1. Install dependencies:   
+
+
 
 
 ```bash
@@ -88,6 +90,8 @@ The registration button and event links can be updated through the data configur
 ## Notes
 
 This is a static frontend project intended for event promotion and registration awareness. It does not include a backend or database.
+
+end
 
 
 
