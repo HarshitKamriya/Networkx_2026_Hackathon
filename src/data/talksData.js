@@ -7,7 +7,7 @@ export const TICKET_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScSRaZeIVT5L
 export const talksData = {
   ticketIntroEyebrow: 'Talks tickets',
   ticketIntroHeading: ['Get your seat.', 'Hear from the experts.'],
-  ticketIntroCopy: 'Day 2 brings industry leaders and researchers to NIT Srinagar for a full day of talks. Seats are limited, so book your ticket early.',
+  ticketIntroCopy: 'Day 2 brings industry leaders and researchers to SKICC, Srinagar for a full day of talks. Seats are limited, so book your ticket early.',
   organizerPrefix: 'Organised by',
   organizer: 'Department of Training & Placement, NIT Srinagar',
   ticketLabels: {

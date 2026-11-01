@@ -176,35 +176,42 @@ export function Venue() {
         </h2>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-3xl bg-white p-8 shadow-sm">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
-              📍
+          {EVENT.venues.map((v) => (
+            <div key={v.name} className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-sm">
+              <div className="p-8">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
+                  📍
+                </div>
+
+                <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-primary">
+                  {v.day}
+                </p>
+
+                <h3 className="mt-2 text-2xl font-bold">{v.name}</h3>
+
+                <p className="mt-1 font-semibold text-slate-700">{v.fullName}</p>
+
+                <p className="mt-3 leading-7 text-slate-600">{v.address}</p>
+
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v.mapQuery)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-sm font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-dark"
+                >
+                  Open in Google Maps
+                </a>
+              </div>
+
+              <iframe
+                title={`Map of ${v.fullName}`}
+                src={`https://www.google.com/maps?q=${encodeURIComponent(v.mapQuery)}&output=embed`}
+                className="mt-auto h-64 w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
-
-            <h3 className="mt-6 text-2xl font-bold">
-              Venue to be decided
-            </h3>
-
-            <p className="mt-4 leading-7 text-slate-600">
-              The official venue and address will be announced soon.
-              Stay tuned for updates.
-            </p>
-          </div>
-
-          {/* MAP PLACEHOLDER */}
-          <div className="flex min-h-72 items-center justify-center rounded-3xl bg-slate-200 p-8">
-            <div className="text-center">
-              <div className="text-5xl">🗺️</div>
-
-              <h3 className="mt-4 text-xl font-bold text-slate-700">
-                Google Map
-              </h3>
-
-              <p className="mt-2 text-sm text-slate-500">
-                Map will be added once the venue is finalized.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

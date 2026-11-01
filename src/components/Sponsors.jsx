@@ -6,6 +6,9 @@ const SPONSORS = [
   
   { name: "Rising Kashmir", logo: "/sponsors/rising-kashmir.png", href: "https://risingkashmir.com/" },
   { name: "J&K Bank", logo: "/sponsors/jk-bank.png", href: "https://www.jkbank.com/" },
+  { name: "FIL Industries", logo: "/sponsors/fil-industries.png", href: "https://www.filindustries.com/" },
+  { name: "Fortinet", logo: "/sponsors/fortinet.svg", href: "https://www.fortinet.com/" },
+  { name: "Intec Infonet", logo: "/sponsors/intec-infonet.png", href: "https://www.intecinfonet.com/" },
 ];
 
 export default function Sponsors() {
@@ -21,14 +24,14 @@ export default function Sponsors() {
         </h2>
 
         {SPONSORS.length > 0 ? (
-          <ul className="mt-12 flex flex-wrap items-center justify-center gap-6">
+          <ul className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:flex lg:flex-wrap lg:items-center lg:justify-center">
             {SPONSORS.map((s) => (
-              <li key={s.name} className="w-full sm:w-72">
+              <li key={s.name} className="lg:w-72">
                 <a
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-40 items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
+                  className="flex h-28 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 transition sm:h-40 sm:p-6 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
                 >
                   <img src={s.logo} alt={s.name} className="h-full w-full object-contain" />
                 </a>
