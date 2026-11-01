@@ -26,12 +26,12 @@ export default function Navbar() {
       >
         <Logo onClick={close} />
 
-        <ul className="hidden items-center gap-4 md:flex lg:gap-6 xl:gap-8">
+        <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
           {NAV_LINKS.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="relative text-[13px] text-white/75 transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all hover:text-white hover:after:w-full lg:text-sm"
+                className="relative whitespace-nowrap text-sm text-white/75 transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all hover:text-white hover:after:w-full"
               >
                 {l.label}
               </a>
@@ -40,7 +40,7 @@ export default function Navbar() {
           <li>
             <a
               href={TICKETS_HREF}
-              className="rounded-md border border-white/25 px-3.5 py-2 text-[13px] font-semibold text-white transition-colors hover:border-accent hover:text-accent lg:px-4 lg:text-sm"
+              className="whitespace-nowrap rounded-md border border-white/25 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-accent hover:text-accent"
             >
               Buy Ticket
             </a>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <li>
             <a
               href={REGISTER_HREF}
-              className="rounded-md bg-primary px-3.5 py-2 text-[13px] font-semibold text-white shadow-[0_4px_16px_-4px_rgba(29,78,216,0.8)] transition-colors hover:bg-accent hover:text-dark lg:px-4 lg:text-sm"
+              className="whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(29,78,216,0.8)] transition-colors hover:bg-accent hover:text-dark"
             >
               Register
             </a>
@@ -56,7 +56,7 @@ export default function Navbar() {
         </ul>
         <button
           type="button"
-          className="shrink-0 rounded-md p-2 md:hidden"
+          className="shrink-0 rounded-md p-2 lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -79,7 +79,7 @@ export default function Navbar() {
 
 
       {open && (
-        <div id="mobile-menu" className="border-t border-white/10 bg-dark md:hidden">
+        <div id="mobile-menu" className="border-t border-white/10 bg-dark lg:hidden">
           <ul className="flex flex-col px-5 py-3 sm:px-8">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>

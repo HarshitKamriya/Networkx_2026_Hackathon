@@ -3,27 +3,85 @@ import { EVENT } from "../data/eventInfo";
 
 const TALKS_DAY = EVENT.days.find((d) => d.title.includes("Talks")) ?? EVENT.days[1];
 
+// In programme order. kind defaults to "Talk"; use "Performance" for performers.
 const speakers = [
   {
-    name: "Speaker Name",
-    designation: "Designation / Organization",
-    talk: "Talk Title Goes Here",
-    image: "", // add a photo path, e.g. "/speakers/name.jpg"
-    bio: "Add the speaker's short professional biography here. Mention their expertise, experience, research interests, and relevant work.",
+    name: "Mamta Sharma",
+    designation: "Founder, Soldier and Monk",
+    talk: "",
+    image: "/speakers/mamta-sharma.webp",
+    bio: "Mamta Sharma is a Personality Development and Soft Skills Expert, Leadership Mentor, and Entrepreneur with over 15 years of experience shaping confident individuals, inspiring leaders, and developing high-performing professionals. As the Founder of Soldier and Monk, she empowers people to strengthen their confidence, communication skills, emotional intelligence, and professional presence. Her experience spans education, capacity building, stakeholder engagement, and strategic partnerships. With a vision to transform 100,000 individuals by 2030, she believes lasting success requires both external strength and inner wisdom. Through entrepreneurship, leadership, and skill development, she helps students and emerging professionals turn potential into performance and prepare not only for employment, but also for leadership, lifelong learning, and meaningful impact.",
   },
   {
-    name: "Speaker Name",
-    designation: "Designation / Organization",
-    talk: "Talk Title Goes Here",
-    image: "", // add a photo path, e.g. "/speakers/name.jpg"
-    bio: "Add the speaker's short professional biography here. Mention their expertise, experience, research interests, and relevant work.",
+    name: "Mushtaaque Ali Ahmad Khan",
+    designation: "Actor & Director · Founder, Kashmir World Film Festival",
+    talk: "",
+    image: "/speakers/mushtaaque-ali-ahmad-khan.webp",
+    bio: "Mushtaaque Ali Ahmad Khan is a Srinagar-based actor, theatre practitioner, television producer and filmmaker who has devoted five decades to the performing arts in Kashmir. He began acting as a child artist in 1974 and completed his post-graduation from the University of Kashmir in 1982. He has acted in and directed more than two dozen stage plays and, as an empanelled producer-director for Doordarshan, has helmed numerous teleplays, telefilms and serials. He is the Creative Director of Actors' Creative Theatre (ACT) and the founder of the Kashmir World Film Festival (KWFF), which he has organised across several editions to bring world cinema to the Valley. His contributions have been recognised with the Jammu & Kashmir Government State Award (2025) and a Lifetime Achievement Award for Art & Culture in Kashmir.",
   },
   {
-    name: "Speaker Name",
-    designation: "Designation / Organization",
-    talk: "Talk Title Goes Here",
-    image: "", // add a photo path, e.g. "/speakers/name.jpg"
-    bio: "Add the speaker's short professional biography here. Mention their expertise, experience, research interests, and relevant work.",
+    name: "Prof. (Dr.) Mohd Amin Malik",
+    designation: "College Principal, Higher Education Department, J&K",
+    talk: "",
+    image: "/speakers/mohd-amin-malik.webp",
+    bio: "Prof. (Dr.) Mohd Amin Malik is an academician, researcher, and columnist serving as a College Principal in the Higher Education Department, Government of Jammu and Kashmir. With 30 years of service in higher education, he has taught Physics in institutions across Kashmir for more than 24 years and has served in institutional leadership as a College Principal. His expertise includes curriculum development, academic planning, institutional collaborations, NAAC assessment and accreditation, research management, and campus development. As Principal of Government Degree College Bandipora (2020–2022), he led initiatives in campus development, NAAC accreditation, skill-based courses, research funding, and sustainability. He holds a Ph.D. in Physics from the University of Kashmir (2005), an M.Sc. in Physics, and a Postgraduate Diploma in Computer Science. He has authored 31+ technical research papers, the book Science for a Sustainable Future (2021), and more than 200 articles on science, education, technology, and social issues.",
+  },
+  {
+    name: "Hiral Sharma",
+    designation: "Head of Architecture, Fortinet",
+    talk: "",
+    image: "/speakers/hiral-sharma.webp",
+    bio: "Hiral Sharma is a cybersecurity leader with well over a decade of experience in designing and securing large-scale networks for government, defence, PSU and enterprise organisations. As Head of Architecture at Fortinet, Hiral Sharma leads solution architecture for customers across India and SAARC, having earlier served as Principal Architect and Head – Solution Architect (Govt, Defence & PSU), India & SAARC. A regular speaker at national technology forums, Hiral Sharma speaks on AI-driven security, cyber hygiene and human-machine teaming.",
+  },
+  {
+    name: "Dr. Sandesh Ganjoo",
+    designation: "Gynaecologist, Author, Researcher & Marathoner",
+    talk: "",
+    image: "/speakers/sandesh-ganjoo.webp",
+    bio: "Dr. Sandesh Ganjoo is a gynaecologist, author, researcher and marathoner. A medical academician in the Department of Obstetrics & Gynaecology at Guru Gobind Singh Medical College and Hospital, Faridkot, Punjab, Dr. Ganjoo holds an MD in Obstetrics & Gynaecology and combines clinical practice and teaching with research in women's health, with published work on post-menopausal bleeding, carpal tunnel syndrome in pregnancy and lactation, and complications of chronic oligohydramnios. Beyond medicine, Dr. Ganjoo is a passionate marathon runner and was a speaker at TEDx NIT Srinagar.",
+  },
+  {
+    name: "Hina Gojwari",
+    designation: "Academic Director, Emly Labs AI Academy",
+    talk: "Artificial Intelligence",
+    image: "/speakers/hina-gojwari.webp",
+    bio: "Hina Gojwari is an educator and technology professional working at the intersection of Artificial Intelligence, education, and industry. As the Academic Director at Emly Labs AI Academy, she focuses on creating practical, project-based learning experiences that prepare students for the evolving world of technology. She is also the driving force behind JKOSI, an open-source community initiative in Jammu and Kashmir that brings students and developers together to build, collaborate, and contribute to real-world projects. Her work centres on bridging the gap between academic learning and industry through hands-on learning, open-source collaboration, and innovation.",
+  },
+  {
+    name: "Adv. Barkat Rattan",
+    designation: "Advocate & Social Activist",
+    talk: "",
+    image: "/speakers/barkat-rattan.webp",
+    bio: "Adv. Barkat Kaur Rattan is a Srinagar-based advocate and social activist. A vocal voice for youth, she has spoken publicly on youth representation in politics, unemployment, women's empowerment and inclusive governance in Jammu and Kashmir, and has encouraged young citizens to take an active part in the democratic process. Beyond law, she is also active in theatre and television.",
+  },
+  {
+    name: "Mir Sarwar",
+    designation: "Actor, Director & Producer",
+    talk: "",
+    image: "/speakers/mir-sarwar.webp",
+    bio: "Mir Sarwar is a distinguished Kashmiri actor, director and producer, widely recognised for his powerful screen presence and nuanced portrayals in Hindi cinema. Born and raised in Pandrethan, Srinagar, he began his artistic journey in theatre and modelling before honing his craft through workshops at the National School of Drama (NSD), Delhi. His breakthrough came with Bajrangi Bhaijaan (2015), and his filmography includes Phantom, Dishoom, Kedarnath, Jolly LLB 2, Kesari, Hamid, Laxmii and Am I Next. Beyond acting, he is an award-winning photographer and filmmaker who directed Bed No. 17. Deeply committed to the growth of cinema in Jammu & Kashmir, he works to attract film productions to the region and create opportunities for local talent, and through his production banner Safdar Arts supports meaningful, independent storytelling. He has also served on the preview committee of the International Film Festival of India (IFFI).",
+  },
+  {
+    name: "Dr. Aneeda Jan",
+    designation: "Assistant Professor of Law, CDOE, University of Kashmir",
+    talk: "Human Trafficking: Laws and Challenges",
+    image: "/speakers/aneeda-jan.webp",
+    bio: "Dr. Aneeda Jan is an Assistant Professor of Law at the Centre for Distance and Online Education (CDOE), University of Kashmir. An academician, researcher, author, and legal educator, she has experience in legal education, curriculum development, online learning, and academic administration. She was the first candidate from the Department of Law, University of Kashmir, to qualify for the UGC Junior Research Fellowship (JRF) and Senior Research Fellowship (SRF), and has also qualified the State Level Eligibility Test (SLET). Her research interests include the socio-legal perspectives on euthanasia and honour killings, gender justice, women's rights, and criminal justice. She authored Honour Killings (Academic Press, London, 2019) and Euthanasia: Socio-Legal Perspectives (2012). She has also coordinated SWAYAM/CEC online courses in Constitutional Law, Administrative Law, and Law of Torts. At NetworkX 2026, she will speak on the legal and socio-legal dimensions of human trafficking, its implementation challenges, and the need for a coordinated, victim-centred response.",
+  },
+  {
+    name: "Mr. Altaf Bukhari",
+    designation: "Founder & President, J&K Apni Party",
+    talk: "",
+    image: "/speakers/altaf-bukhari.webp",
+    bio: "Syed Mohammad Altaf Bukhari is a Srinagar-based politician and businessman and the Founder-President of the Jammu and Kashmir Apni Party. Elected to the Legislative Assembly from Amira Kadal in 2014, he served as a Cabinet Minister in the Jammu and Kashmir Government, including as Minister for Education. In March 2020 he founded the Jammu and Kashmir Apni Party, with a focus on development, employment for youth and the restoration of statehood. Alongside public life, he has an established background in business and enterprise in Kashmir.",
+  },
+  {
+    name: "Noor Mohammad",
+    designation: "Kashmiri Sufi & Folk Singer",
+    kind: "Performance",
+    talk: "Live Singing Performance",
+    image: "/speakers/noor-mohammad.webp",
+    bio: "Noor Mohammad Shah is a celebrated Kashmiri Sufi and folk singer and rabab player from Baki-Aker village in Handwara, Kupwara. For years he sang traditional Kashmiri kalam on the streets and at Sufi shrines of the Valley, until a video of him singing by the roadside with his rabab went viral and made him a household name. Songs such as \"Kya Karie Korimol\" have since reached millions online, and he now performs at cultural events and festivals across the country. His soulful voice carries forward the rich tradition of Kashmiri Sufi music to new generations.",
   },
 ];
 
@@ -56,19 +114,14 @@ const organizers = [
 
 const faculty = [
   {
-    name: "Faculty Name",
-    role: "Faculty Coordinator",
-    image: "", // add a photo path, e.g. "/speakers/name.jpg"
+    name: "Umar Majid",
+    role: "Coordinator",
+    image: "/faculty/umar-majid.webp",
   },
   {
-    name: "Faculty Name",
-    role: "Faculty Coordinator",
-    image: "", // add a photo path, e.g. "/speakers/name.jpg"
-  },
-  {
-    name: "Faculty Name",
-    role: "Patron",
-    image: "", // add a photo path, e.g. "/speakers/name.jpg"
+    name: "Syed Hussain",
+    role: "Co-coordinator",
+    image: "/faculty/syed-hussain.webp",
   },
 ];
 
@@ -95,38 +148,35 @@ function Photo({ src, alt, className = "" }) {
 function SpeakerCard({ speaker, onReadMore }) {
   return (
     <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-      <div className="relative h-64 overflow-hidden bg-light">
+      {/* 4:5 matches the speaker photos in public/speakers, so nothing is cropped */}
+      <div className="relative aspect-[4/5] overflow-hidden bg-light">
         <Photo
           src={speaker.image}
           alt={speaker.name}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent" />
 
-        <div className="absolute bottom-4 left-4 right-4 text-white">
-          <p className="text-sm font-medium text-accent">
-            {speaker.designation}
-          </p>
-
-          <h3 className="mt-1 text-xl font-bold">
+        <div className="absolute bottom-2 left-3 right-3 text-white sm:bottom-4 sm:left-4 sm:right-4">
+          <h3 className="text-sm font-bold leading-tight sm:text-xl">
             {speaker.name}
           </h3>
         </div>
       </div>
 
-      <div className="p-5">
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-          {TALKS_DAY.label} · Talk
+      <div className="p-3 sm:p-5">
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-primary sm:text-xs">
+          {TALKS_DAY.label} · {speaker.kind ?? "Talk"}
         </p>
 
-        <h3 className="mt-2 min-h-[3.5rem] text-lg font-bold text-text">
-          {speaker.talk}
+        <h3 className="mt-1 min-h-[3.75rem] text-xs font-bold leading-snug text-text sm:mt-2 sm:min-h-[3.5rem] sm:text-lg">
+          {speaker.designation}
         </h3>
 
         <button
           onClick={() => onReadMore(speaker)}
-          className="mt-5 inline-flex items-center font-semibold text-primary transition hover:text-accent"
+          className="mt-3 inline-flex items-center text-sm font-semibold text-primary transition hover:text-accent sm:mt-5 sm:text-base"
         >
           Read Bio
           <span className="ml-2 transition group-hover:translate-x-1">
@@ -140,33 +190,35 @@ function SpeakerCard({ speaker, onReadMore }) {
 
 function PersonCard({ person, showLinkedIn = false }) {
   return (
-    <div className="group rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-light">
+    <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <div className="aspect-square overflow-hidden bg-light">
         <Photo
           src={person.image}
           alt={person.name}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
         />
       </div>
 
-      <h3 className="mt-4 text-lg font-bold text-text">
-        {person.name}
-      </h3>
+      <div className="p-3 sm:p-5">
+        <h3 className="text-sm font-bold text-text sm:text-lg">
+          {person.name}
+        </h3>
 
-      <p className="mt-1 text-sm font-medium text-primary">
-        {person.role}
-      </p>
+        <p className="mt-1 text-sm font-medium text-primary">
+          {person.role}
+        </p>
 
-      {showLinkedIn && (
-        <a
-          href={person.linkedin}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-4 inline-flex items-center rounded-lg bg-light px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white"
-        >
-          LinkedIn
-        </a>
-      )}
+        {showLinkedIn && (
+          <a
+            href={person.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-flex items-center rounded-lg bg-light px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white"
+          >
+            LinkedIn
+          </a>
+        )}
+      </div>
     </div>
   );
 }
@@ -196,7 +248,7 @@ export default function Speakers() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3 lg:gap-8">
             {speakers.map((speaker, index) => (
               <SpeakerCard
                 key={index}
@@ -230,7 +282,7 @@ export default function Speakers() {
 
             <div className="pr-10">
               <p className="text-sm font-semibold uppercase tracking-wider text-primary">
-                Speaker
+                {selectedSpeaker.kind === "Performance" ? "Performer" : "Speaker"}
               </p>
 
               <h2 className="mt-2 text-2xl font-extrabold text-text">
@@ -245,18 +297,20 @@ export default function Speakers() {
             <Photo
               src={selectedSpeaker.image}
               alt={selectedSpeaker.name}
-              className="mt-6 h-56 w-full rounded-xl object-cover"
+              className="mx-auto mt-6 aspect-[4/5] w-full max-w-60 rounded-xl bg-light object-cover object-top"
             />
 
-            <div className="mt-6">
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary">
-                Talk
-              </p>
+            {selectedSpeaker.talk && (
+              <div className="mt-6">
+                <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+                  {selectedSpeaker.kind ?? "Talk"}
+                </p>
 
-              <h3 className="mt-2 text-xl font-bold text-text">
-                {selectedSpeaker.talk}
-              </h3>
-            </div>
+                <h3 className="mt-2 text-xl font-bold text-text">
+                  {selectedSpeaker.talk}
+                </h3>
+              </div>
+            )}
 
             <div className="mt-6">
               <p className="text-sm font-semibold uppercase tracking-wider text-primary">
@@ -297,7 +351,7 @@ export function Team() {
             </p>
 
             <h2 className="mt-2 text-3xl font-extrabold text-text md:text-4xl">
-              Faculty Coordinators & Patrons
+              Faculty Coordinators
             </h2>
 
             <p className="mt-4 text-slate-600">
@@ -306,7 +360,7 @@ export function Team() {
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-2xl grid-cols-2 gap-4 sm:gap-6">
             {faculty.map((person, index) => (
               <PersonCard
                 key={index}
@@ -337,7 +391,7 @@ export function Team() {
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
             {organizers.map((person, index) => (
               <PersonCard
                 key={index}

@@ -22,7 +22,7 @@ export default function Faq() {
     {
       question: "Where will the event take place?",
       answer:
-        "Venue to be decided. The venue details will be announced soon.",
+        "Day 1 (Hackathon) takes place at NIT Srinagar, Hazratbal. Day 2 (Talks) takes place at SKICC (Sher-i-Kashmir International Conference Centre), Srinagar.",
     },
     {
       question: "When will the event schedule be announced?",
