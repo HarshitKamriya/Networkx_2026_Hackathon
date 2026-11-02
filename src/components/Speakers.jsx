@@ -35,7 +35,6 @@ const speakers = [
     bio: "Hiral Sharma is a cybersecurity leader with well over a decade of experience in designing and securing large-scale networks for government, defence, PSU and enterprise organisations. As Head of Architecture at Fortinet, Hiral Sharma leads solution architecture for customers across India and SAARC, having earlier served as Principal Architect and Head – Solution Architect (Govt, Defence & PSU), India & SAARC. A regular speaker at national technology forums, Hiral Sharma speaks on AI-driven security, cyber hygiene and human-machine teaming.",
   },
   */
-  /*
   {
     name: "Dr. Sandesh Ganjoo",
     designation: "Gynaecologist, Author, Researcher & Marathoner",
@@ -43,7 +42,6 @@ const speakers = [
     image: "/speakers/sandesh-ganjoo.webp",
     bio: "Dr. Sandesh Ganjoo is a gynaecologist, author, researcher and marathoner. A medical academician in the Department of Obstetrics & Gynaecology at Guru Gobind Singh Medical College and Hospital, Faridkot, Punjab, Dr. Ganjoo holds an MD in Obstetrics & Gynaecology and combines clinical practice and teaching with research in women's health, with published work on post-menopausal bleeding, carpal tunnel syndrome in pregnancy and lactation, and complications of chronic oligohydramnios. Beyond medicine, Dr. Ganjoo is a passionate marathon runner and was a speaker at TEDx NIT Srinagar.",
   },
-  */
   {
     name: "Hina Gojwari",
     designation: "Academic Director, Emly Labs AI Academy",
