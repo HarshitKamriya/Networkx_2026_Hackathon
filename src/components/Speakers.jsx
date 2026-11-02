@@ -26,6 +26,7 @@ const speakers = [
     image: "/speakers/mohd-amin-malik.webp",
     bio: "Prof. (Dr.) Mohd Amin Malik is an academician, researcher, and columnist serving as a College Principal in the Higher Education Department, Government of Jammu and Kashmir. With 30 years of service in higher education, he has taught Physics in institutions across Kashmir for more than 24 years and has served in institutional leadership as a College Principal. His expertise includes curriculum development, academic planning, institutional collaborations, NAAC assessment and accreditation, research management, and campus development. As Principal of Government Degree College Bandipora (2020–2022), he led initiatives in campus development, NAAC accreditation, skill-based courses, research funding, and sustainability. He holds a Ph.D. in Physics from the University of Kashmir (2005), an M.Sc. in Physics, and a Postgraduate Diploma in Computer Science. He has authored 31+ technical research papers, the book Science for a Sustainable Future (2021), and more than 200 articles on science, education, technology, and social issues.",
   },
+  /*
   {
     name: "Hiral Sharma",
     designation: "Head of Architecture, Fortinet",
@@ -33,6 +34,7 @@ const speakers = [
     image: "/speakers/hiral-sharma.webp",
     bio: "Hiral Sharma is a cybersecurity leader with well over a decade of experience in designing and securing large-scale networks for government, defence, PSU and enterprise organisations. As Head of Architecture at Fortinet, Hiral Sharma leads solution architecture for customers across India and SAARC, having earlier served as Principal Architect and Head – Solution Architect (Govt, Defence & PSU), India & SAARC. A regular speaker at national technology forums, Hiral Sharma speaks on AI-driven security, cyber hygiene and human-machine teaming.",
   },
+  */
   {
     name: "Dr. Sandesh Ganjoo",
     designation: "Gynaecologist, Author, Researcher & Marathoner",
@@ -68,6 +70,7 @@ const speakers = [
     image: "/speakers/aneeda-jan.webp",
     bio: "Dr. Aneeda Jan is an Assistant Professor of Law at the Centre for Distance and Online Education (CDOE), University of Kashmir. An academician, researcher, author, and legal educator, she has experience in legal education, curriculum development, online learning, and academic administration. She was the first candidate from the Department of Law, University of Kashmir, to qualify for the UGC Junior Research Fellowship (JRF) and Senior Research Fellowship (SRF), and has also qualified the State Level Eligibility Test (SLET). Her research interests include the socio-legal perspectives on euthanasia and honour killings, gender justice, women's rights, and criminal justice. She authored Honour Killings (Academic Press, London, 2019) and Euthanasia: Socio-Legal Perspectives (2012). She has also coordinated SWAYAM/CEC online courses in Constitutional Law, Administrative Law, and Law of Torts. At NetworkX 2026, she will speak on the legal and socio-legal dimensions of human trafficking, its implementation challenges, and the need for a coordinated, victim-centred response.",
   },
+  /*
   {
     name: "Mr. Altaf Bukhari",
     designation: "Founder & President, J&K Apni Party",
@@ -75,6 +78,7 @@ const speakers = [
     image: "/speakers/altaf-bukhari.webp",
     bio: "Syed Mohammad Altaf Bukhari is a Srinagar-based politician and businessman and the Founder-President of the Jammu and Kashmir Apni Party. Elected to the Legislative Assembly from Amira Kadal in 2014, he served as a Cabinet Minister in the Jammu and Kashmir Government, including as Minister for Education. In March 2020 he founded the Jammu and Kashmir Apni Party, with a focus on development, employment for youth and the restoration of statehood. Alongside public life, he has an established background in business and enterprise in Kashmir.",
   },
+  */
   {
     name: "Noor Mohammad",
     designation: "Kashmiri Sufi & Folk Singer",
