@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react'
-import { hackathonData, REGISTRATION_URL } from '../data/hackathonData.js'
+import { hackathonData, REGISTRATION_URL, REGISTRATION_CLOSED } from '../data/hackathonData.js'
 import './Hackathon.css'
 
 const iconPaths = {
@@ -244,6 +244,8 @@ function Registration() {
   const labels = hackathonData.registrationLabels
   const isOpen = REGISTRATION_URL && REGISTRATION_URL !== '#'
   const [paymentOpen, setPaymentOpen] = useState(false)
+  const [triedClosed, setTriedClosed] = useState(false)
+  const register = () => (REGISTRATION_CLOSED ? setTriedClosed(true) : setPaymentOpen(true))
 
   return (
     <section className="hackathon-registration" id="register" aria-labelledby="registration-title">
@@ -262,13 +264,15 @@ function Registration() {
               {labels.checklist.map((item) => <li key={item}><Icon name="check" />{item}</li>)}
             </ul>
           </div>
-          {isOpen ? (
-            <button type="button" className="hackathon-submit" onClick={() => setPaymentOpen(true)}>{labels.open}<Icon name="arrow" /></button>
+          {triedClosed ? (
+            <p className="hackathon-submit is-closed" role="status">{labels.formsClosed}</p>
+          ) : isOpen ? (
+            <button type="button" className="hackathon-submit" onClick={register}>{labels.open}<Icon name="arrow" /></button>
           ) : (
             <p className="hackathon-submit is-closed" role="status">{labels.closed}</p>
           )}        </div>
       </div>
-      {isOpen && <PaymentDialog open={paymentOpen} onClose={() => setPaymentOpen(false)} />}
+      {isOpen && !REGISTRATION_CLOSED && <PaymentDialog open={paymentOpen} onClose={() => setPaymentOpen(false)} />}
     </section>
   )
 }

@@ -35,6 +35,7 @@ const speakers = [
     bio: "Hiral Sharma is a cybersecurity leader with well over a decade of experience in designing and securing large-scale networks for government, defence, PSU and enterprise organisations. As Head of Architecture at Fortinet, Hiral Sharma leads solution architecture for customers across India and SAARC, having earlier served as Principal Architect and Head – Solution Architect (Govt, Defence & PSU), India & SAARC. A regular speaker at national technology forums, Hiral Sharma speaks on AI-driven security, cyber hygiene and human-machine teaming.",
   },
   */
+  /*
   {
     name: "Dr. Sandesh Ganjoo",
     designation: "Gynaecologist, Author, Researcher & Marathoner",
@@ -42,6 +43,7 @@ const speakers = [
     image: "/speakers/sandesh-ganjoo.webp",
     bio: "Dr. Sandesh Ganjoo is a gynaecologist, author, researcher and marathoner. A medical academician in the Department of Obstetrics & Gynaecology at Guru Gobind Singh Medical College and Hospital, Faridkot, Punjab, Dr. Ganjoo holds an MD in Obstetrics & Gynaecology and combines clinical practice and teaching with research in women's health, with published work on post-menopausal bleeding, carpal tunnel syndrome in pregnancy and lactation, and complications of chronic oligohydramnios. Beyond medicine, Dr. Ganjoo is a passionate marathon runner and was a speaker at TEDx NIT Srinagar.",
   },
+  */
   {
     name: "Hina Gojwari",
     designation: "Academic Director, Emly Labs AI Academy",
@@ -79,6 +81,27 @@ const speakers = [
     bio: "Syed Mohammad Altaf Bukhari is a Srinagar-based politician and businessman and the Founder-President of the Jammu and Kashmir Apni Party. Elected to the Legislative Assembly from Amira Kadal in 2014, he served as a Cabinet Minister in the Jammu and Kashmir Government, including as Minister for Education. In March 2020 he founded the Jammu and Kashmir Apni Party, with a focus on development, employment for youth and the restoration of statehood. Alongside public life, he has an established background in business and enterprise in Kashmir.",
   },
   */
+  {
+    name: "Prof. (Dr.) Sabia Qureshi",
+    designation: "Professor cum Chief Scientist, Microbiology & Immunology · Associate Dean, Faculty of Veterinary Sciences, SKUAST-K",
+    talk: "",
+    image: "/speakers/sabia-qureshi.webp",
+    bio: "Prof. (Dr.) Sabia Qureshi is a Professor cum Chief Scientist in the Division of Veterinary Microbiology and Immunology and Associate Dean of the Faculty of Veterinary Sciences and Animal Husbandry at SKUAST-Kashmir. She was the first woman to win the gold medal at the bachelor's level in the Faculty of Veterinary Sciences. Her master's research on rotavirus was part of the first reported detection of rotavirus in animals in Kashmir, and for her Ph.D. she developed a bacteriophage-lysed Pasteurella multocida vaccine and a DIVA ELISA that tells vaccinated animals apart from infected ones. As a laboratory officer at the Disease Investigation Laboratory, Budgam, she helped set up a microbiology lab that expanded pathogen identification and antibiotic sensitivity testing. In 2021 she joined the Centre for Public Health at the University of Nebraska Medical Center, USA, where she worked on whole-genome sequencing and wastewater surveillance of SARS-CoV-2. She leads a DBT-funded project to develop an aptamer-based diagnostic kit for Campylobacter infection, and her work has been published in international journals.",
+  },
+  {
+    name: "Farah Zaidee",
+    designation: "Social Activist, Gender Researcher & Content Creator",
+    talk: "",
+    image: "/speakers/farah-zaidee.webp",
+    bio: "Farah Zaidee is a Kashmir-based social activist, development practitioner and digital content creator. She holds a Master's in Gender Studies from the University of Kashmir, has worked as an NGO project lead with the Indo-Global Social Service Society, and has been a show host at Doordarshan Kendra Srinagar and a radio presenter. Through her writing and her widely followed social media platforms, she speaks on women's empowerment, gender sensitivity and violence against women, including acid attacks in Kashmir. She also documents rural education and sustainable travel across the Valley, visiting villages to highlight local challenges and supporting NGOs and community initiatives.",
+  },
+  {
+    name: "Jagdeep Singh, JKAS",
+    designation: "Civil Servant · TEDx Speaker · Strategic Reformer",
+    talk: "",
+    image: "/speakers/jagdeep-singh.webp",
+    bio: "Jagdeep Singh is a Jammu & Kashmir Administrative Service (JKAS) officer of the 2019 batch, serving in the Department of Industries and Commerce, Government of Jammu & Kashmir. An alumnus of NIT Srinagar, he graduated with a B.Tech in 2015. His experience in public administration and governance spans district administration, public service delivery, healthcare and industrial development. A multiple-time TEDx speaker, he has been featured on TEDx platforms at NIT Srinagar, NIT Goa, NIT Hamirpur, Andhra University and SBU Pune, along with other national events.",
+  },
   {
     name: "Noor Mohammad",
     designation: "Kashmiri Sufi & Folk Singer",
@@ -377,6 +400,7 @@ export function Team() {
       </section>
 
       {/* ==================== ORGANIZING TEAM ==================== */}
+      {/* Hidden for now.
       <section className="bg-light px-6 py-20">
         <div className="mx-auto max-w-6xl">
 
@@ -407,6 +431,7 @@ export function Team() {
 
         </div>
       </section>
+      */}
     </div>
   );
 }

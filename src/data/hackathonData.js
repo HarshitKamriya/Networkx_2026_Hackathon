@@ -1,6 +1,8 @@
 // Registration is handled by Google Forms only. Paste the form's share link here;
 // while it is '#', the site shows "Registration opens soon".
 export const REGISTRATION_URL = 'https://forms.gle/f43MWKpYHRbSTokC7'
+// Set to true once registrations are over; "Register now" then shows the formsClosed message.
+export const REGISTRATION_CLOSED = true
 
 const DURATION = '8 hours'
 const TEAM_SIZE = 'Solo or teams of up to 4 (1 to 4 members)'
@@ -77,6 +79,7 @@ export const hackathonData = {
     ],
     open: 'Register now',
     closed: 'Registration opens soon',
+    formsClosed: 'Registration forms are closed.',
   },
   // Bank details shown in the popup before the Google Form opens.
   payment: {
