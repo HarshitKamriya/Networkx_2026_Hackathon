@@ -45,6 +45,7 @@ export default function Navbar() {
               Buy Ticket
             </a>
           </li>
+          {/* Hackathon registration is closed.
           <li>
             <a
               href={REGISTER_HREF}
@@ -53,6 +54,7 @@ export default function Navbar() {
               Register
             </a>
           </li>
+          */}
         </ul>
         <button
           type="button"
@@ -88,7 +90,7 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="pt-3">
+            <li className="py-3">
               <a
                 href={TICKETS_HREF}
                 onClick={close}
@@ -97,6 +99,7 @@ export default function Navbar() {
                 Buy Ticket
               </a>
             </li>
+            {/* Hackathon registration is closed.
             <li className="py-3">
               <a
                 href={REGISTER_HREF}
@@ -106,6 +109,7 @@ export default function Navbar() {
                 Register
               </a>
             </li>
+            */}
           </ul>
         </div>
       )}

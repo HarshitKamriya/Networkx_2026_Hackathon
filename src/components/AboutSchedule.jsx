@@ -1,4 +1,4 @@
-import { EVENT } from "../data/eventInfo";
+import { EVENT, TALKS_SCHEDULE } from "../data/eventInfo";
 
 export default function AboutSchedule() {
   return (
@@ -71,8 +71,8 @@ export default function AboutSchedule() {
             </h2>
 
             <p className="mt-4 text-slate-300">
-              The detailed schedule will be updated as the event plans are
-              finalized.
+              The Day 2 timeline below is tentative and may change as the
+              event plans are finalized.
             </p>
           </div>
 
@@ -131,29 +131,51 @@ export default function AboutSchedule() {
 
             {/* DAY 2 */}
             <div className="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm">
-              <p className="text-sm font-bold uppercase tracking-widest text-accent">
-                {EVENT.days[1].label} · {EVENT.days[1].date}
-              </p>
-
-              <h3 className="mt-2 text-2xl font-bold">
-                {EVENT.days[1].title}
-              </h3>
-
-              <div className="mt-8 flex min-h-52 items-center justify-center rounded-2xl border border-dashed border-white/20 bg-white/[0.03] p-8 text-center">
+              <div className="flex items-start justify-between gap-4">
                 <div>
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent/10 text-2xl">
-                    📅
-                  </div>
-
-                  <p className="mt-4 font-semibold text-slate-200">
-                    Schedule coming soon
+                  <p className="text-sm font-bold uppercase tracking-widest text-accent">
+                    {EVENT.days[1].label} · {EVENT.days[1].date}
                   </p>
+                  <h3 className="mt-2 text-2xl font-bold">
+                    {EVENT.days[1].title}
+                  </h3>
+                </div>
 
-                  <p className="mt-2 text-sm text-slate-400">
-                    The Day 2 timeline will be announced once finalized.
-                  </p>
+                <div className="shrink-0 rounded-2xl border border-accent/40 px-4 py-2 text-sm font-semibold text-accent">
+                  Tentative
                 </div>
               </div>
+
+              <ol className="mt-6 divide-y divide-white/10">
+                {TALKS_SCHEDULE.map((item) => (
+                  <li
+                    key={item.time}
+                    className="grid grid-cols-[8.5rem_1fr] items-baseline gap-3 py-2.5 sm:grid-cols-[9.5rem_1fr_auto]"
+                  >
+                    <span className="text-sm font-semibold text-accent">
+                      {item.time}
+                    </span>
+                    <span
+                      className={
+                        item.kind === "highlight"
+                          ? "font-semibold text-white"
+                          : item.kind === "break"
+                            ? "font-medium italic text-slate-300"
+                            : "text-slate-200"
+                      }
+                    >
+                      {item.title}
+                    </span>
+                    <span className="hidden text-xs text-slate-500 sm:block">
+                      {item.duration}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+
+              <p className="mt-4 text-xs text-slate-500">
+                Timings are tentative and may change.
+              </p>
             </div>
           </div>
         </div>

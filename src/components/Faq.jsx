@@ -27,7 +27,7 @@ export default function Faq() {
     {
       question: "When will the event schedule be announced?",
       answer:
-        "The detailed Day 2 talks schedule is to be decided and will be announced once finalized.",
+        "A tentative Day 2 talks schedule is up in the Schedule section. Timings may change, and the final schedule will be announced once confirmed.",
     },
     {
       question: "How long is the hackathon?",
