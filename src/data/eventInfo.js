@@ -54,7 +54,7 @@ export const TALKS_SCHEDULE = [
   { time: "3:45–4:05 PM", duration: "20 min", title: "Singing Performance 2 by Noor Mohammad", kind: "highlight" },
   { time: "4:05–4:20 PM", duration: "15 min", title: "Speaker Session 11" },
   { time: "4:20–4:40 PM", duration: "20 min", title: "Cultural Performance 4", kind: "highlight" },
-  { time: "4:40–5:00 PM", duration: "20 min", title: "Felicitation", kind: "highlight" },
+  { time: "4:40–5:00 PM", duration: "20 min", title: "Presentation of Mementos", kind: "highlight" },
   { time: "5:00–5:10 PM", duration: "10 min", title: "Vote of Thanks & Group Photograph" },
   { time: "5:10 PM", duration: "", title: "Programme Concludes" },
 ];
