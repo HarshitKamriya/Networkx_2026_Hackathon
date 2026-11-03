@@ -275,8 +275,7 @@ export default function Speakers() {
             </h2>
 
             <p className="mt-4 text-slate-600">
-              Explore the speakers and discover the topics they will
-              be discussing on the talks day of NetworkX.
+              Explore the speakers and performers on the talks day of NetworkX.
             </p>
           </div>
 
