@@ -49,10 +49,11 @@ export const TALKS_SCHEDULE = [
   { time: "2:40–3:00 PM", duration: "20 min", title: "Cultural Performance 3", kind: "highlight" },
   { time: "3:00–3:15 PM", duration: "15 min", title: "Special Speaker Session", kind: "highlight" },
   { time: "3:15–3:30 PM", duration: "15 min", title: "Speaker Session 10" },
-  { time: "3:30–3:50 PM", duration: "20 min", title: "Special Singing Performance", kind: "highlight" },
-  { time: "3:50–4:05 PM", duration: "15 min", title: "Hackathon Results Announcement", kind: "highlight" },
-  { time: "4:05–4:50 PM", duration: "45 min", title: "Prize Distribution & Felicitation", kind: "highlight" },
-  { time: "4:50–5:00 PM", duration: "10 min", title: "Vote of Thanks & Group Photograph" },
+  { time: "3:30–3:45 PM", duration: "15 min", title: "Speaker Session 11" },
+  { time: "3:45–4:05 PM", duration: "20 min", title: "Special Singing Performance", kind: "highlight" },
+  { time: "4:05–4:20 PM", duration: "15 min", title: "Hackathon Results Announcement", kind: "highlight" },
+  { time: "4:20–5:05 PM", duration: "45 min", title: "Prize Distribution & Felicitation", kind: "highlight" },
+  { time: "5:05–5:15 PM", duration: "10 min", title: "Vote of Thanks & Group Photograph" },
 ];
 
 export const NAV_LINKS = [
