@@ -101,6 +101,13 @@ const speakers = [
     bio: "Jagdeep Singh is a Jammu & Kashmir Administrative Service (JKAS) officer of the 2019 batch, serving in the Department of Industries and Commerce, Government of Jammu & Kashmir. An alumnus of NIT Srinagar, he graduated with a B.Tech in 2015. His experience in public administration and governance spans district administration, public service delivery, healthcare and industrial development. A multiple-time TEDx speaker, he has been featured on TEDx platforms at NIT Srinagar, NIT Goa, NIT Hamirpur, Andhra University and SBU Pune, along with other national events.",
   },
   {
+    name: "Bhushan Kr Saxena",
+    designation: "Deputy General Manager, Enterprise Business · TP-Link India",
+    talk: "",
+    image: "/speakers/bhushan-kr-saxena.webp",
+    bio: "Bhushan Kr Saxena is the Deputy General Manager for Enterprise Business at TP-Link India Private Limited, where he works on the company's enterprise networking business in India.",
+  },
+  {
     name: "Noor Mohammad",
     designation: "Kashmiri Sufi & Folk Singer",
     kind: "Performance",
@@ -264,12 +271,11 @@ export default function Speakers() {
             </p>
 
             <h2 className="mt-2 text-3xl font-extrabold text-text md:text-4xl">
-              Talks & Speakers
+              Speakers & Performers
             </h2>
 
             <p className="mt-4 text-slate-600">
-              Explore the speakers and discover the topics they will
-              be discussing on the talks day of NetworkX.
+              Explore the speakers and performers on the talks day of NetworkX.
             </p>
           </div>
 
