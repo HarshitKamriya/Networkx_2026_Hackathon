@@ -92,6 +92,6 @@ The registration button and event links can be updated through the data configur
 This is a static frontend project intended for event promotion and registration awareness. It does not include a backend or database.
 
 
-end
+
 
 
