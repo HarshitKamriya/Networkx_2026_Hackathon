@@ -37,6 +37,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          {/* Event is over, so tickets are hidden.
           <li>
             <a
               href={TICKETS_HREF}
@@ -45,6 +46,7 @@ export default function Navbar() {
               Event Is Over
             </a>
           </li>
+          */}
           {/* Hackathon registration is closed.
           <li>
             <a
@@ -90,6 +92,7 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            {/* Event is over, so tickets are hidden.
             <li className="py-3">
               <a
                 href={TICKETS_HREF}
@@ -99,6 +102,7 @@ export default function Navbar() {
                 Event Is Over
               </a>
             </li>
+            */}
             {/* Hackathon registration is closed.
             <li className="py-3">
               <a

@@ -68,7 +68,7 @@ export default function Hero() {
 
           <div className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur-sm sm:p-8">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
-              Starts in
+              Status
             </p>
             <Countdown target={EVENT.countdownTarget} />
           </div>

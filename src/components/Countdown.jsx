@@ -30,7 +30,7 @@ export default function Countdown({ target }) {
     );
   }
   if (parts.over) {
-    return <p className="text-lg font-semibold text-accent">NetworkX 2026 has begun.</p>;
+    return <p className="text-lg font-semibold text-accent">NetworkX 2026 is over.</p>;
   }
 
   return (
