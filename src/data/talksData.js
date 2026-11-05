@@ -3,6 +3,8 @@
 import { hackathonData } from './hackathonData.js'
 
 export const TICKET_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScSRaZeIVT5LV8Zk4DHV4OAc0KKLm3wn94PK4KtNrxEkuhd4A/viewform'
+// Set to true once the event is over; "Buy ticket" then shows the formsClosed message.
+export const TICKETS_CLOSED = true
 
 export const talksData = {
   ticketIntroEyebrow: 'Talks tickets',
@@ -20,6 +22,7 @@ export const talksData = {
     ],
     open: 'Buy ticket',
     closed: 'Tickets on sale soon',
+    formsClosed: 'Event is over.',
   },
   // Same bank account as the hackathon; only the fee and wording differ.
   payment: {

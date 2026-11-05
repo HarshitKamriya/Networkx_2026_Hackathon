@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { EVENT } from '../data/eventInfo'
-import { talksData, TICKET_URL } from '../data/talksData.js'
+import { talksData, TICKET_URL, TICKETS_CLOSED } from '../data/talksData.js'
 import { Icon, PaymentDialog } from './Hackathon'
 import './Hackathon.css'
 
@@ -11,6 +11,8 @@ export default function Tickets() {
   const labels = talksData.ticketLabels
   const isOpen = TICKET_URL && TICKET_URL !== '#'
   const [paymentOpen, setPaymentOpen] = useState(false)
+  const [triedClosed, setTriedClosed] = useState(false)
+  const buy = () => (TICKETS_CLOSED ? setTriedClosed(true) : setPaymentOpen(true))
 
   return (
     <div className="hackathon">
@@ -30,14 +32,16 @@ export default function Tickets() {
                 {labels.checklist.map((item) => <li key={item}><Icon name="check" />{item}</li>)}
               </ul>
             </div>
-            {isOpen ? (
-              <button type="button" className="hackathon-submit" onClick={() => setPaymentOpen(true)}>{labels.open}<Icon name="arrow" /></button>
+            {triedClosed ? (
+              <p className="hackathon-submit is-closed" role="status">{labels.formsClosed}</p>
+            ) : isOpen ? (
+              <button type="button" className="hackathon-submit" onClick={buy}>{labels.open}<Icon name="arrow" /></button>
             ) : (
               <p className="hackathon-submit is-closed" role="status">{labels.closed}</p>
             )}
           </div>
         </div>
-        {isOpen && <PaymentDialog open={paymentOpen} onClose={() => setPaymentOpen(false)} payment={talksData.payment} url={TICKET_URL} />}
+        {isOpen && !TICKETS_CLOSED && <PaymentDialog open={paymentOpen} onClose={() => setPaymentOpen(false)} payment={talksData.payment} url={TICKET_URL} />}
       </section>
     </div>
   )

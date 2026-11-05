@@ -382,7 +382,7 @@ export function Team() {
             </p>
 
             <h2 className="mt-2 text-3xl font-extrabold text-text md:text-4xl">
-              Faculty Coordinators
+              Coordinators
             </h2>
 
             <p className="mt-4 text-slate-600">

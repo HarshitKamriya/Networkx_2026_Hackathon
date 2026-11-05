@@ -42,7 +42,7 @@ export default function Navbar() {
               href={TICKETS_HREF}
               className="whitespace-nowrap rounded-md border border-white/25 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-accent hover:text-accent"
             >
-              Buy Ticket
+              Event Is Over
             </a>
           </li>
           {/* Hackathon registration is closed.
@@ -96,7 +96,7 @@ export default function Navbar() {
                 onClick={close}
                 className="block rounded-md border border-white/25 px-4 py-3 text-center font-semibold text-white hover:border-accent hover:text-accent"
               >
-                Buy Ticket
+                Event Is Over
               </a>
             </li>
             {/* Hackathon registration is closed.
